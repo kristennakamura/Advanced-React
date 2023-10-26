@@ -1,13 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import Products from '../components/Products';
 
-export default function ProductPage() {
+export default function ProductsPage() {
   return (
     <div>
-      <p>Sell</p>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
+      <Products />
     </div>
   );
 }
