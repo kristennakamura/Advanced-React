@@ -12,7 +12,7 @@ export default function useForm(initial = {}) {
     }
 
     if (type === 'file') {
-      value = e.target.file;
+      [value] = e.target.files;
     }
 
     setInputs({
