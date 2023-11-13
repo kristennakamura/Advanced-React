@@ -3,11 +3,10 @@ import { useState, useEffect } from 'react';
 export default function useForm(initial = {}) {
   // create a state object for our fields
   const [inputs, setInputs] = useState(initial);
-  const initialValues = Object.values(initial).join('');
 
   useEffect(() => {
     setInputs(initial);
-  }, [initialValues]);
+  }, [initial]);
 
   function handleChange(e) {
     let { name, type, value } = e.target;
