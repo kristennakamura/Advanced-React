@@ -6,7 +6,7 @@ export default function useForm(initial = {}) {
 
   useEffect(() => {
     setInputs(initial);
-  }, [initial]);
+  }, []);
 
   function handleChange(e) {
     let { name, type, value } = e.target;
