@@ -5,7 +5,7 @@ export default function formatMoney(amount = 0) {
     minimumFractionDigits: 2,
   };
 
-  if (amount % 100 === 0) {
+  if (amount % 1000 === 0) {
     options.minimumFractionDigits = 0;
   }
 
