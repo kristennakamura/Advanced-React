@@ -5,11 +5,11 @@ export default function formatMoney(amount = 0) {
     minimumFractionDigits: 2,
   };
 
-  if (amount % 1000 === 0) {
+  if (amount % 100 === 0) {
     options.minimumFractionDigits = 0;
   }
 
   const formatter = Intl.NumberFormat('en-CA', options);
 
-  return formatter.format(amount / 1000);
+  return formatter.format(amount / 100);
 }
